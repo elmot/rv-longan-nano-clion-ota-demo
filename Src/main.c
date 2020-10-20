@@ -1,10 +1,28 @@
 #include "gd32vf103.h"
 #include "systick.h"
+#include "lcd/lcd.h"
+#include "pict.inc"
 
 void _init();
+
+
+void LCD_ShowPict(void)
+{
+    int i;
+    LCD_Address_Set(0,0,159,79);
+    for(i=0;i<25600;i+=2)
+    {
+        LCD_WR_DATA8(gimp_image.pixel_data[i+1]);
+        LCD_WR_DATA8(gimp_image.pixel_data[i]);
+    }
+}
+
 int main(void) {
     _init();
-    SystemCoreClockUpdate();
+    Lcd_Init();			// init OLED
+//    LCD_Clear(RED);
+    BACK_COLOR=WHITE;
+    LCD_ShowPict();
     /* Configure the LED pins */
     rcu_periph_clock_enable(RCU_GPIOA);
     rcu_periph_clock_enable(RCU_GPIOC);
@@ -30,7 +48,7 @@ int main(void) {
         } else {
             gpio_bit_set(GPIOC, GPIO_PIN_13);
         }
-        delay_1ms(300);
+        delay_1ms(500);
 
     }
 }

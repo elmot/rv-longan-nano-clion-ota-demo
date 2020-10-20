@@ -44,6 +44,7 @@ endif ()
 
 include_directories(
     ${CMAKE_SOURCE_DIR}/Inc
+    ${CMAKE_SOURCE_DIR}/Inc/lcd
     ${FIRMWARE_DIR}/GD32VF103_standard_peripheral/Include
     ${FIRMWARE_DIR}/GD32VF103_standard_peripheral
     ${FIRMWARE_DIR}/RISCV/drivers
