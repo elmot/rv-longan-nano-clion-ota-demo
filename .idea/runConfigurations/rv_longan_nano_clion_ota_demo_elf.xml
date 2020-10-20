@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="rv-longan-nano-clion-ota-demo.elf" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" nameIsGenerated="true" PROGRAM_PARAMS=" -t -pw raspberry -L 3333:127.0.0.1:3333 pi@192.168.0.110 openocd -f rpi1-gpio-jtag.cfg -f target/gd32vf103.cfg" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rv-longan-nano-clion-ota-demo" TARGET_NAME="rv-longan-nano-clion-ota-demo.elf" CONFIG_NAME="Debug-MinGW RV" version="1" RUN_TARGET_PROJECT_NAME="rv-longan-nano-clion-ota-demo" RUN_TARGET_NAME="rv-longan-nano-clion-ota-demo.elf">
+    <custom-gdb-server toolchainName="MinGW RV" version="1" gdb-connect="tcp::3333" executable="plink" warmup-ms="1500" download-type="ALWAYS" reset-cmd="monitor reset init" reset-after-download="true" />
+    <method v="2">
+      <option name="CLION.COMPOUND.BUILD" enabled="true" />
+    </method>
+  </configuration>
+</component>
