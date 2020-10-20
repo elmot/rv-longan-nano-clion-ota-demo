@@ -16,7 +16,7 @@ find_program(SIZE riscv-none-embed-size)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # project settings
-project(rv-longan-nano-blink C CXX ASM)
+project(rv-longan-nano-clion-ota-demo C CXX ASM)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
