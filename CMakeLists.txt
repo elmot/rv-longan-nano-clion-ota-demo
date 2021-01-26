@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-set(CMAKE_PROGRAM_PATH C:/tools/xpack-riscv-none-embed-gcc-8.3.0-2.2/bin) #[[todo adjust for a real system]]
+set(CMAKE_PROGRAM_PATH C:/tools/xpack-riscv/bin) #[[todo adjust for a real system]]
 
 # specify cross compilers and tools
 set(CMAKE_C_COMPILER_WORKS 1)
