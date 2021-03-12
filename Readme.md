@@ -2,6 +2,8 @@ Over-The-Air Flashing of Risc-V device using CLion
 ===
 Just a trivial blinky example for a company's blog post
 
+**The post: [Want to Flash and Debug an MCU Over the Air? Just Use Your Raspberry Pi](https://blog.jetbrains.com/clion/2021/03/flash-debug-over-air/)**
+
 Resources involved
 ---
 - [CLion 2020.3+](https://www.jetbrains.com/clion/nextversion/)
