@@ -14,4 +14,3 @@ Resources involved
 - [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (Windows only)
 - SD card, card reader for it, some ff jumper wires, usb-mini cable
 
-**TBD** Blog post link
